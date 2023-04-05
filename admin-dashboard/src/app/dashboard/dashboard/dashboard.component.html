@@ -1,0 +1,105 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #d3dedf;">
+    <a class="navbar-brand" href="#">System Monitoring Dashboard</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container ">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <span><i class="fa fa-server"> System:</i></span>&nbsp;&nbsp;
+                    <span><i class="fa fa-database"> DB:</i></span>&nbsp;
+                    <span><i class="fa fa-hdd-o"> Disk Space:</i></span>&nbsp;
+                    <span><i class="fa fa-cubes" aria-hidden="true"> Processors:</i></span>&nbsp;
+                    <span><i class="fa fa-clock-o"> Up Time:</i></span>
+                </li>
+            </ul>
+            <div class="form-inline my-2 my-lg-0">
+                <button class="btn btn-outline-success my-2 my-sm-0">Refresh Data</button>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-4 col-xl-3">
+            <div class="card bg-c-blue order-card">
+                <div class="card-block">
+                    <h6 class="m-b-20">Orders Received</h6>
+                    <h2 class="text-right"><i class="fa fa-cart-plus f-left"></i><span>486</span></h2>
+                    <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-xl-3">
+            <div class="card bg-c-green order-card">
+                <div class="card-block">
+                    <h6 class="m-b-20">Orders Received</h6>
+                    <h2 class="text-right"><i class="fa fa-rocket f-left"></i><span>486</span></h2>
+                    <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-xl-3">
+            <div class="card bg-c-yellow order-card">
+                <div class="card-block">
+                    <h6 class="m-b-20">Orders Received</h6>
+                    <h2 class="text-right"><i class="fa fa-refresh f-left"></i><span>486</span></h2>
+                    <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-xl-3">
+            <div class="card bg-c-pink order-card">
+                <div class="card-block">
+                    <h6 class="m-b-20">Orders Received</h6>
+                    <h2 class="text-right"><i class="fa fa-credit-card f-left"></i><span>486</span></h2>
+                    <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-md-6 col-lg-6">HTTP RESPONSE
+            <canvas id="barChart" style="display: block;"></canvas>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6">HTTP RESPONSE
+            <canvas id="pieChart" style="display: block;"></canvas>
+        </div>
+
+        <hr>
+
+        <div class="col-sm-6 col-md-6 col-lg-12" style="margin-tip: 50px;">
+            <h5 class="pull-left">HTTP Traces</h5>
+            <button type="button" class="btn btn-primary btn-sm pull-rigth"
+                style="margin-bottom: 10px; margin-left: 50px;">
+                <i class="fa fa-external-link" aria-hidden="true">export to Excel</i>
+            </button>
+        </div>
+        <table class="table table-hover mt-3">
+            <thead>
+                <tr>
+                    <th scope="col">Time Stamp</th>
+                    <th scope="col">Method</th>
+                    <th scope="col">Time Taken(ms)</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">URI</th>
+                    <th scope="col">View</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
